@@ -11,13 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140504084425) do
+ActiveRecord::Schema.define(version: 20140505110027) do
 
   create_table "blogs", force: true do |t|
     t.string   "subject"
     t.text     "body"
     t.string   "user"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sessions", force: true do |t|
+    t.string   "token"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "user"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

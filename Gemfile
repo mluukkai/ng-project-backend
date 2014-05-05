@@ -43,6 +43,8 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'byebug'
 
+gem 'bcrypt-ruby', '~> 3.1.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

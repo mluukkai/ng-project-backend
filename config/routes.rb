@@ -1,4 +1,10 @@
 Backend::Application.routes.draw do
+  resources :users
+  resources :sessions
+
+  post 'session', to: 'sessions#create'
+  delete 'session', to: 'sessions#destroy'
+
   scope(:path => '/api') do
     resources :blogs
   end
