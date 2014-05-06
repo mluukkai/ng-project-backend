@@ -18,20 +18,15 @@ class SessionsController < ApplicationController
   # POST /sessions.json
   def create
 
-    user = User.find_by user:params[:user] #user:credentials[:user]
+    user = User.find_by user:params[:user]
     auth = user.authenticate(params[:password]) if user
 
     @session = Session.new(user:user)
 
-    respond_to do |format|
-      if auth and @session.save
-        format.html { redirect_to @session, notice: 'Session was successfully created.' }
-        format.json { render json: @session.token }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @session.errors, status: :unprocessable_entity }
-      end
-    end
+    if auth and @session.save
+      render json: @session.token
+    else
+      render json: @session.errors, status: :unprocessable_entity
   end
 
 
