@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_with_token, only:[destroy]
+  before_action :authenticate_with_token, only:[:destroy]
 
   # GET /blogs
   # GET /blogs.json

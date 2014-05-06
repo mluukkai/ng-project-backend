@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06d6fa9c-bd8a-4b34-8deb-51693775573a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/blogs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/blogs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="backend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +64,7 @@
       <file leaf-file-name="blogs_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="55" selection-start="168" selection-end="168" vertical-scroll-proportion="0.05076142" vertical-offset="0" max-vertical-offset="1215">
+            <state line="2" column="49" selection-start="162" selection-end="162" vertical-scroll-proportion="0.05076142" vertical-offset="0" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -530,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/blogs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="55" selection-start="168" selection-end="168" vertical-scroll-proportion="0.05076142" vertical-offset="0" max-vertical-offset="1215">
+        <state line="2" column="49" selection-start="162" selection-end="162" vertical-scroll-proportion="0.05076142" vertical-offset="0" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
